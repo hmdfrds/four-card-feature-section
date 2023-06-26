@@ -1,0 +1,115 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+html,
+body{
+    font-family: 'Poppins';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+h1{
+    line-height: 0;
+    font-weight: 200;
+    font-size: 40px;
+}
+h2{
+    color: var(--veryDarkBlue);
+    line-height: 0;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+p{
+    font-weight: 400;
+    color: var(--grayishBlue);
+}
+
+.red-bg{
+    background-color: var(--red);
+}
+.card-wrapper{
+    margin: 15px ;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.card{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    background-color: var(--veryLightGray);
+}
+.card p{
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+h3{
+    color: var(--veryDarkBlue);
+    line-height: 0;
+}
+img{
+    align-self: flex-end;
+}
+
+.row
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.some-shit-margin-top{
+    margin-top: 20px;
+}
+
+.yellow-bg{
+    background-color: var(--orange);
+}
+
+.blue-bg{
+    background-color: var(--blue);
+}
+
+.cyan-bg{
+    background-color: var(--cyan);
+}
+
+.shrink-pls{
+    margin: 0 50px;
+    text-align: center;
+    max-width: 650px;
+    word-wrap: break-word
+}
+
+@media screen and (max-width: 1225px) {
+    .row {
+        flex-direction: column;
+    }
+
+    h2,h1{
+        font-size: 35px;
+    }
+}
